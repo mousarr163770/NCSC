@@ -1,0 +1,17 @@
+CREATE DATABASE ncsc_bank;
+USE ncsc_bank;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) UNIQUE,
+  password VARCHAR(255),
+  balance DECIMAL(10,2) DEFAULT 500.00
+);
+
+CREATE TABLE transactions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  amount DECIMAL(10,2),
+  type VARCHAR(20),
+  date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

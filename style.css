@@ -1,0 +1,278 @@
+/* ================================
+   General Styles
+================================ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+/* ================================
+   Navbar
+================================ */
+.navbar {
+  background-color: #0d47a1;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* Center logo */
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+/* ================================
+   Hero Section + Background
+================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/background.jpg') no-repeat center center/cover;
+}
+
+/* ================================
+   Login / Register Forms
+================================ */
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-container input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #0d47a1;
+}
+
+.form-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form-container a {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.form-container a:hover {
+  color: #0d47a1;
+}
+
+/* ================================
+   Services Section
+================================ */
+.services {
+  padding: 60px 40px;
+  text-align: center;
+  background: #fff;
+}
+
+.services h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: #0d47a1;
+}
+
+.service {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  font-size: 20px;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+/* ================================
+   Responsive Design
+================================ */
+
+/* للشاشات الصغيرة (موبايل أقل من 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar .navbar-brand {
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .form-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
+
+/* للشاشات الكبيرة (لابتوب/ديسكتوب فوق 1024px) */
+@media (min-width: 1024px) {
+  .form-container {
+    margin: 60px auto;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: #0d47a1;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
